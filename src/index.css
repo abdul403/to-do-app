@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  background-image: url("./assets/todoApp.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  border-bottom: rgb(12, 12, 97);
+}
+
+.logo {
+  border-radius: 20%;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 70px;
+  margin-left: 1.3em;
+  padding: 0.2em;
+  margin-top: 20px;
+}
+.heading {
+  font-family: system-ui;
+  font: 400;
+  margin: 10px;
+  text-align: center;
+  color: rgb(19, 33, 101);
+  user-select: none;
+  background: transparent;
+}
+
+.container > form > textarea {
+  resize: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.container > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+input,
+textarea,
+.add-button {
+  margin: 0.4em;
+  padding: 0.3rem;
+
+  border-radius: 5px;
+  font-family: system-ui;
+  font-size: 15px;
+  font-weight: 900;
+  color: rgb(35, 11, 62);
+  border: 2px solid rgb(0, 0, 0);
+  outline: none;
+  padding: 1em;
+  background: transparent;
+  width: 70%;
+}
+
+::placeholder {
+  color: rgb(12, 8, 65);
+  opacity: 0.5;
+}
+
+.add-button {
+  color: rgb(25, 25, 99);
+  cursor: pointer;
+  border: 1px solid rgb(92, 104, 184);
+  width: 90px;
+
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid rgb(48, 39, 39);
+  margin: 1em;
+  padding: 0.4em;
+  border-radius: 4px;
+}
+
+.task-button {
+  border-radius: 8px;
+  padding: 0.6rem;
+  width: 200px;
+  cursor: pointer;
+
+  border: none;
+  color: rgb(23, 5, 42);
+  background: transparent;
+  font-size: 1.2em;
+  font-weight: 300;
+  
+}
+
+.task-button:hover {
+  background-color: rgb(81, 33, 133);
+  color: white;
+}
+.task-notes {
+  font-family: system-ui;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+:disabled {
+  color: red;
+  cursor: not-allowed;
+  border: 1px solid red;
+}
