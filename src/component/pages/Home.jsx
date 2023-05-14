@@ -46,7 +46,7 @@ const Home = () => {
         ></textarea>
         <button
           disabled={!title.length || !description.length > 0}
-          className= "add-button"
+          className="add-button"
           type="submit"
         >
           ADD

@@ -9,6 +9,12 @@ body {
 
 .header {
   border-bottom: rgb(12, 12, 97);
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
 }
 
 .logo {
@@ -79,7 +85,6 @@ textarea,
   cursor: pointer;
   border: 1px solid rgb(92, 104, 184);
   width: 90px;
-
 }
 
 .task {
@@ -103,7 +108,6 @@ textarea,
   background: transparent;
   font-size: 1.2em;
   font-weight: 300;
-  
 }
 
 .task-button:hover {
@@ -120,4 +124,162 @@ textarea,
   color: red;
   cursor: not-allowed;
   border: 1px solid red;
+}
+
+/* react Links Navbar */
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1em;
+}
+
+.sub-links {
+  text-decoration: none;
+  margin: 10px;
+  color: black;
+  font-weight: 600;
+  font-family: system-ui;
+}
+
+.sub-links:hover {
+  color: chocolate;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: rgb(78, 76, 76);
+  height: 2em;
+}
+
+.footer-content {
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+}
+
+.footer-content > span {
+  color: rgb(212, 180, 180);
+  font-size: 20px;
+  font-weight: 700;
+  font-family: system-ui;
+  margin-right: 2em;
+  user-select: none;
+}
+
+.footer-content > a {
+  font-size: 25px;
+  margin: 0.4em;
+  color: black;
+}
+
+.footer-content > a:hover {
+  color: rgb(212, 180, 180);
+  cursor: pointer;
+}
+
+/* about page */
+
+.about {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  max-width: 80%;
+  justify-content: center;
+  margin: auto;
+}
+
+@media only screen and (max-width: 678px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+  }
+}
+
+.dev-photo {
+  width: 500px;
+  height: 500px;
+  border-radius: 3%;
+  object-fit: cover;
+  margin-right: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .dev-photo {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+  }
+}
+
+.about-content {
+  /* border:1px solid red; */
+  font-family: system-ui;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: rgb(29, 12, 46);
+}
+
+.about-content > p {
+  font-size: 0.9em;
+  max-width: 80%;
+  line-height: 2em;
+  font-weight: 400;
+  color: rgb(5, 22, 133);
+}
+
+@media only screen and (max-width: 600px) {
+  .about-content > p {
+    color: black;
+    max-width: 100%;
+  }
+}
+
+.contact-header {
+  text-align: center;
+  font-family: system-ui;
+  font-size: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact {
+  min-height: 100vh;
+}
+
+.form-input {
+  width: 40%;
+}
+
+.form > button {
+  padding: 0.5em;
+  margin: 1em;
+  width: 20%;
+  border-radius: 0.5em;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid navy;
+}
+
+.email-btn {
+  padding: 1em;
+  border: 1px solid cornflowerblue;
+  background: transparent;
+
+  margin-left: 25%;
+  margin-top: 40px;
+}
+
+.email {
+  font-size: 15px;
 }
